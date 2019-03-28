@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "lib": ["dom", "ES6", "ScriptHost"],
+    "target": "es6",
+    "jsx": "react",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "outDir": "./.meteor/local/tsout",
+    "baseUrl": ".",
+    "paths": {
+      "*": ["*"]
+    },
+    "sourceMap": true
+  },
+  "compileOnSave": true,
+  "include": [
+    "client/**/*",
+    "imports/**/*",
+    "server/**/*",
+    "node_modules/@types",
+    "tests"
+  ],
+  "exclude": [
+    "node_modules",
+    ".meteor",
+    "public",
+    "private"
+  ]
+}
