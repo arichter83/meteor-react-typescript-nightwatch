@@ -5,14 +5,18 @@
     "start": "meteor run",
     "test": "meteor test --once --driver-package meteortesting:mocha",
     "test-app": "TEST_WATCH=1 meteor test --full-app --driver-package meteortesting:mocha",
+    "test-nightwatch": "nightwatch -c config/nightwatch.json",
     "visualize": "meteor --production --extra-packages bundle-visualizer"
   },
   "dependencies": {
     "@babel/runtime": "^7.1.5",
     "@types/meteor": "^1.4.27",
+    "@types/nightwatch": "^0.9.12",
     "@types/react": "^16.8.10",
     "@types/react-dom": "^16.8.3",
+    "chromedriver": "^2.46.0",
     "meteor-node-stubs": "^0.4.1",
+    "nightwatch": "^1.0.19",
     "react": "^16.5.0",
     "react-dom": "^16.5.0",
     "typescript": "^3.3.4000"
