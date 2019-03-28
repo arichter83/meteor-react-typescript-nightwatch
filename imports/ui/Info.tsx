@@ -22,7 +22,7 @@ class Info extends React.Component<IProps> {
 
   makeLink(link: ILink) {
     return (
-      <li key={link._id}>
+      <li key={link._id} id={link._id}>
         <a href={link.url} target="_blank">{link.title}</a>
       </li>
     );
