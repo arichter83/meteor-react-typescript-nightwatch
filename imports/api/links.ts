@@ -1,11 +1,11 @@
 import { Mongo } from 'meteor/mongo';
 
 
-interface ILink {
-  _id: string
+export interface ILink {
+  _id?: string
   url: string
   title: string
+  createdAt: Date
 }
 
-const Links:Mongo.Collection<ILink> = new Mongo.Collection('links')
-export default Links
+export const Links:Mongo.Collection<ILink> = new Mongo.Collection('links')

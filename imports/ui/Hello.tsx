@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
+import * as React from 'react';
 
-export default class Hello extends Component {
+export default class Hello extends React.Component {
   state = {
     counter: 0,
   }
