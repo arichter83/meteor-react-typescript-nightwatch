@@ -1,6 +1,9 @@
 import { NightwatchTests } from 'nightwatch';
 
-import { Links } from 'imports/api/links'
+/*
+import { Links } from '../../imports/api/links'
+console.log(Links.findOne())
+*/
 
 const tests: NightwatchTests = {
   'Check 2x click': (browser) => {
@@ -12,7 +15,7 @@ const tests: NightwatchTests = {
       .click('div button')
       .assert.containsText('#react-target', '2 times')
   },
-  'Create new link and delete again': (browser) => {
+  'Create new link and delete again via Client': (browser) => {
     browser
       .execute(function() {
         return (Meteor as any).connection._stores['links']._getCollection()
