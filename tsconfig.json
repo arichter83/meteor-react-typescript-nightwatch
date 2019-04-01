@@ -9,7 +9,7 @@
     "emitDecoratorMetadata": true,
     "outDir": "./.meteor/local/tsout",
     "baseUrl": ".",
-    "types": ["node", "meteor"],
+    "types": ["node", "meteor", "jest"],
     "paths": {
       "*": ["*"]
     },
