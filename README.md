@@ -6,6 +6,13 @@ npm install
 meteor
 ```
 
+## Running unit test with jest
+
+The jest tests are using the "react-test-renderer" and "meteor-jest-stubs" (https://github.com/tomscholz/meteor-jest-stubs):
+```bash
+npm run test
+```
+
 ## Running end-to-end (e2e) tests with nightwatch
 
 Open three terminals and run these commands
