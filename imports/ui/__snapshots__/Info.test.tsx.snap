@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Info /> rendering links 1`] = `
+<div>
+  <h2>
+    Learn Meteor!
+  </h2>
+  <ul>
+    <li
+      id="theid"
+    >
+      <a
+        href="http://test.com"
+        target="_blank"
+      >
+        Link
+      </a>
+    </li>
+  </ul>
+</div>
+`;

@@ -6,7 +6,7 @@ interface IProps {
   links: ILink[]
 }
 
-class Info extends React.Component<IProps> {
+export class Info extends React.Component<IProps> {
   render() {
     const links = this.props.links.map(
       link => this.makeLink(link)
