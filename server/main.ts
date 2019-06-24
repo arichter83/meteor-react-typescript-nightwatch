@@ -1,5 +1,12 @@
+
+import * as apm from 'elastic-apm-node/start'
+
+apm.flush()
+
+
 import { Meteor } from 'meteor/meteor';
 import { Links } from 'imports/api/links';
+
 
 function insertLink(title: string, url: string) {
   Links.insert({ title, url, createdAt: new Date() });
