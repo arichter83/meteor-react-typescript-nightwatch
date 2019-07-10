@@ -41,14 +41,8 @@ const modules = (isClient) => {
     {
       test: /\.scss$/,
       use: [
-        { loader: MiniCssExtractPlugin.loader, options: {
-            // only enable hot in development
-            hmr: isdev,
-            // if hmr does not work, this is a forceful method
-            reloadAll: true
-          }
-        },
-        { loader: "css-loader", options: {sourceMap: isdev ? true : false} },
+        MiniCssExtractPlugin.loader,
+        "css-loader",
         "sass-loader"
       ]
     },
@@ -98,6 +92,7 @@ let serverConfig = {
     entry: './server/main.ts',
     module: modules(false),
     plugins: [
+      new FixStyleOnlyEntriesPlugin(),
       new MiniCssExtractPlugin({
         filename: '[name].css',
         chunkFilename: '[name].css',

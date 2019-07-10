@@ -6,6 +6,8 @@ interface IProps {
   links: ILink[]
 }
 
+import(/* webpackChunkName: "info" */ '../../client/info.scss')
+
 export class Info extends React.Component<IProps> {
   render() {
     const links = this.props.links.map(
