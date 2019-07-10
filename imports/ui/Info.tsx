@@ -6,7 +6,7 @@ interface IProps {
   links: ILink[]
 }
 
-import(/* webpackChunkName: "info" */ '../../client/info.scss')
+import(/* webpackChunkName: "info" */ '../../client/info.css')
 
 export class Info extends React.Component<IProps> {
   render() {
