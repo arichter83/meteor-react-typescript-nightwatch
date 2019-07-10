@@ -10,6 +10,7 @@
     "visualize": "meteor --production --extra-packages bundle-visualizer"
   },
   "dependencies": {
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
     "@babel/runtime": "^7.1.5",
     "@types/jest": "^24.0.11",
     "@types/meteor": "^1.4.27",
@@ -19,26 +20,36 @@
     "@types/react-dom": "^16.8.3",
     "@types/react-test-renderer": "^16.8.1",
     "babel-jest": "^24.5.0",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-dynamic-import-node": "^2.3.0",
+    "babel-plugin-remove-webpack": "^1.1.0",
     "chromedriver": "^2.46.0",
+    "css-loader": "^3.0.0",
+    "html-webpack-plugin": "^3.2.0",
     "meteor-node-stubs": "^0.4.1",
+    "mini-css-extract-plugin": "^0.7.0",
     "nightwatch": "^1.0.19",
     "react": "^16.5.0",
     "react-dom": "^16.5.0",
-    "typescript": "^3.3.4000"
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "typescript": "^3.3.4000",
+    "webpack": "^4.35.3",
+    "webpack-fix-style-only-entries": "^0.3.0",
+    "webpack-merge": "^4.2.1"
   },
   "meteor": {
-    "mainModule": {
-      "client": "client/main.tsx",
-      "server": "server/main.ts"
-    },
     "testModule": "tests/main.js"
   },
   "devDependencies": {
-    "@babel/plugin-proposal-class-properties": "^7.4.0",
-    "@babel/preset-env": "^7.4.2",
+    "@babel/plugin-proposal-class-properties": "^7.5.0",
+    "@babel/preset-env": "^7.5.4",
     "@babel/preset-react": "^7.0.0",
     "@babel/preset-typescript": "^7.3.3",
     "meteor-jest-stubs": "^1.8.0",
-    "react-test-renderer": "^16.8.6"
+    "react-test-renderer": "^16.8.6",
+    "webpack-dev-middleware": "^3.7.0",
+    "webpack-meteor-externals": "0.0.5",
+    "webpack-node-externals": "^1.7.2"
   }
 }
